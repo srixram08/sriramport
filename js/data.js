@@ -15,7 +15,7 @@ const PORTFOLIO_DATA = {
       email: "sriram082008s@gmail.com"
     },
     stats: [
-      { label: "Major Projects", value: "12+" },
+      { label: "Major Projects", value: "10+" },
       { label: "Hackathons & Challenges", value: "9+" },
       { label: "Certifications", value: "8+" },
       { label: "Core Competencies", value: "15+" }
@@ -343,56 +343,6 @@ const PORTFOLIO_DATA = {
       ],
       techStack: ["ESP32 Microcontroller", "ThingSpeak IoT Cloud", "C++ / Arduino", "Current Sensors", "REST Telemetry"],
       architecture: "Analog Sensor Array → ESP32 Edge Processor (Calibration) → ThingSpeak REST API → Cloud Analytics Dashboard",
-      links: {
-        github: "https://github.com/srixram08"
-      }
-    },
-    {
-      id: "smart-patient-iot",
-      title: "Smart Patient Tele-Health System",
-      subtitle: "Continuous Multi-Parameter Critical Vitals Monitoring Station",
-      domain: "IoT / Healthcare Systems",
-      category: "iot",
-      featured: false,
-      badge: "Arduino Mega • Biomedical Sensors",
-      heroIcon: "activity",
-      glowColor: "black",
-      problem: "Delays in bedside vitals detection in overburdened hospital wards increase clinical reaction time to critical patient deterioration.",
-      solution: "A sensor-rich telemetry station capturing heart rate, SpO2, and body temperature with automated emergency threshold buzzers and clinician alert relays.",
-      innovation: "Continuous multi-sensor biomedical fusion with fallback local alarm state machine for offline clinical safety.",
-      features: [
-        "💓 Real-Time Heart Rate & Pulse Oximetry (SpO2) Logging",
-        "🌡️ High-Accuracy Body Temperature Telemetry",
-        "🚨 Audible & Visual Emergency Vital Threshold Alarms",
-        "🖥️ Direct Bedside LCD Telemetry Feed with Cloud Mirroring"
-      ],
-      techStack: ["Arduino Mega", "Biomedical Pulse Sensors", "Temperature Probes", "Embedded C++", "Hardware Interfacing"],
-      architecture: "Biomedical Sensors → Analog Filters → Arduino Mega Firmware → Alert State Machine + Remote Feed",
-      links: {
-        github: "https://github.com/srixram08"
-      }
-    },
-    {
-      id: "smart-waste-iot",
-      title: "Smart Automated Waste Separator",
-      subtitle: "Eco-Centric Computerized Sorting & Segregation Unit",
-      domain: "IoT / Sustainability / Robotics",
-      category: "iot",
-      featured: false,
-      badge: "Arduino UNO • Smart Sustainability",
-      heroIcon: "recycle",
-      glowColor: "black",
-      problem: "Manual waste sorting is hazardous, inefficient, and contributes to widespread recyclable material contamination.",
-      solution: "An automated electro-mechanical sorting bin utilizing inductive, capacitive, and moisture sensors to classify and route metallic, wet, and dry waste automatically.",
-      innovation: "Multi-modal sensor arbitration algorithm directing servo-actuated diverter chutes in under 500ms.",
-      features: [
-        "♻️ Multi-category Automated Waste Classification",
-        "🤖 Servo-Actuated Mechanical Deflector Gate Mechanism",
-        "💧 Moisture & Inductive Proximity Sensor Fusion",
-        "📊 Bin Capacity Level Ultrasound Monitoring"
-      ],
-      techStack: ["Arduino UNO", "Servo Actuators", "Inductive & Moisture Sensors", "Embedded C++", "Robotics"],
-      architecture: "Deposition Chamber → Sensor Sampling Loop → Classification Logic → Servo Diversion Mechanism",
       links: {
         github: "https://github.com/srixram08"
       }
