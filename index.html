@@ -36,7 +36,7 @@
       <ul class="nav-center-menu">
         <li><a href="#hero" class="nav-item-link active">Home</a></li>
         <li><a href="#about" class="nav-item-link">About</a></li>
-        <li><a href="#portfolio" class="nav-item-link">Portfolio</a></li>
+        <li><a href="#portfolio" class="nav-item-link">Projects</a></li>
         <li><a href="#skills" class="nav-item-link">Skills</a></li>
         <li><a href="#hackathons" class="nav-item-link">Hackathons</a></li>
         <li><a href="#terminal" class="nav-item-link">Terminal</a></li>
@@ -96,9 +96,14 @@
         Sriram S
       </h1>
 
-      <a href="#portfolio" class="btn-pill-white">
-        View My Works <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
-      </a>
+      <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+        <a href="#portfolio" class="btn-pill-white">
+          View My Works <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+        </a>
+        <button onclick="toggleVoiceOverview()" class="ai-voice-btn" style="background: rgba(255, 255, 255, 0.95); color: #000; border: 1px solid rgba(0, 0, 0, 0.15);">
+          <i data-lucide="volume-2" class="voice-icon-hero"></i> <span>Listen to Bio</span>
+        </button>
+      </div>
     </section>
 
     <!-- Bio Card Overlay Section -->
@@ -125,6 +130,22 @@
             <p class="bio-description">
               2nd Year Computer Science & Engineering student at <strong>Sri Ramakrishna Institute of Technology (SriIT)</strong>. Passionate about solving mission-critical challenges—from satellite-based maritime oil spill attribution with <em>TraceX</em> (SIH 2026 / NTRO) to enterprise AI agent red-teaming with <em>TrustForge</em>, self-healing platforms with <em>ReviveX</em>, and connected IoT telemetry.
             </p>
+
+            <!-- AI Voice Introduction Player -->
+            <div style="margin: 16px 0 22px 0; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <button onclick="toggleVoiceOverview()" class="ai-voice-btn" title="Listen to AI Voice Overview of Sriram">
+                <i data-lucide="volume-2" id="voice-btn-icon"></i>
+                <span id="voice-btn-text">Listen to AI Voice Bio</span>
+                <span id="voice-wave-anim" class="voice-wave-container" style="display: none;">
+                  <span class="wave-bar"></span>
+                  <span class="wave-bar"></span>
+                  <span class="wave-bar"></span>
+                </span>
+              </button>
+              <span style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); font-weight: 500;">
+                🎙️ Neural Voice Overview
+              </span>
+            </div>
 
             <!-- Stats Row -->
             <div class="bio-stats-row">

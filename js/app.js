@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAudioSynthesizer();
   initNavigation();
   initContactForm();
+  initAutoVoiceOverview();
 
   // Re-run Lucide icons after dynamic DOM insertions
   setTimeout(() => {
@@ -445,3 +446,100 @@ window.copyToClipboard = function (text, label) {
     alert(`${label || 'Copied'} to clipboard: ${text}`);
   });
 };
+
+/* ==========================================================================
+   7. AI Voice Overview (SpeechSynthesis)
+   ========================================================================== */
+let isVoicePlaying = false;
+
+window.toggleVoiceOverview = function () {
+  if (!('speechSynthesis' in window)) {
+    alert('Speech synthesis is not supported in this browser.');
+    return;
+  }
+
+  const btnText = document.getElementById('voice-btn-text');
+  const btnIcon = document.getElementById('voice-btn-icon');
+  const waveAnim = document.getElementById('voice-wave-anim');
+
+  function resetUI() {
+    isVoicePlaying = false;
+    if (btnText) btnText.textContent = 'Listen to AI Voice Bio';
+    if (btnIcon) btnIcon.setAttribute('data-lucide', 'volume-2');
+    if (waveAnim) waveAnim.style.display = 'none';
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
+
+  if (isVoicePlaying) {
+    window.speechSynthesis.cancel();
+    resetUI();
+    return;
+  }
+
+  window.speechSynthesis.cancel(); // Clear queue
+
+  const introScript = "Hi, I am Sriram S! I am a 2nd year Computer Science and Engineering student at Sri Ramakrishna Institute of Technology. I specialize in architecting resilient AI systems, geospatial intelligence platforms, and high-performance full-stack architectures. Welcome to my portfolio! Explore my flagship project TraceX for Smart India Hackathon 2026, my TrustForge AI agent security platform, ReviveX self-healing examination system, and my IoT energy telemetry solutions. Feel free to connect or reach out for internships and collaborations!";
+
+  const utterance = new SpeechSynthesisUtterance(introScript);
+  utterance.rate = 0.95;
+  utterance.pitch = 1.0;
+  utterance.volume = 1.0;
+
+  const voices = window.speechSynthesis.getVoices();
+  const preferredVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Daniel') || v.name.includes('Karen') || v.name.includes('Alex'))) || voices.find(v => v.lang.startsWith('en'));
+
+  if (preferredVoice) {
+    utterance.voice = preferredVoice;
+  }
+
+  utterance.onstart = () => {
+    isVoicePlaying = true;
+    if (btnText) btnText.textContent = 'Pause AI Voice';
+    if (btnIcon) btnIcon.setAttribute('data-lucide', 'pause');
+    if (waveAnim) waveAnim.style.display = 'inline-flex';
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  };
+
+  utterance.onend = resetUI;
+  utterance.onerror = resetUI;
+
+  playCyberTone(700, 'sine', 0.08);
+  window.speechSynthesis.speak(utterance);
+};
+
+/* ==========================================================================
+   8. Autoplay AI Voice Overview on Visit
+   ========================================================================== */
+function initAutoVoiceOverview() {
+  let hasStarted = false;
+
+  function attemptPlay() {
+    if (hasStarted || isVoicePlaying) return;
+    hasStarted = true;
+    window.toggleVoiceOverview();
+  }
+
+  // Attempt auto-play after 10 seconds (10000ms)
+  setTimeout(() => {
+    if (!hasStarted) {
+      attemptPlay();
+    }
+  }, 10000);
+
+  // Fallback: If browser blocks audio autoplay before gesture, start on first user interaction
+  const userGestureHandler = () => {
+    if (!hasStarted) {
+      attemptPlay();
+    }
+    window.removeEventListener('click', userGestureHandler);
+    window.removeEventListener('scroll', userGestureHandler);
+    window.removeEventListener('keydown', userGestureHandler);
+    window.removeEventListener('touchstart', userGestureHandler);
+  };
+
+  window.addEventListener('click', userGestureHandler, { once: true });
+  window.addEventListener('scroll', userGestureHandler, { once: true });
+  window.addEventListener('keydown', userGestureHandler, { once: true });
+  window.addEventListener('touchstart', userGestureHandler, { once: true });
+}
+
