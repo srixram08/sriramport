@@ -12,6 +12,7 @@ const PORTFOLIO_DATA = {
     links: {
       github: "https://github.com/srixram08",
       linkedin: "https://www.linkedin.com/in/sriram-s-3a52aa382/",
+      hackerrank: "https://www.hackerrank.com/profile/sriram_08",
       email: "sriram082008s@gmail.com"
     },
     stats: [
