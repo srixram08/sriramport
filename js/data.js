@@ -345,6 +345,7 @@ const PORTFOLIO_DATA = {
       techStack: ["ESP32 Microcontroller", "ThingSpeak IoT Cloud", "C++ / Arduino", "Current Sensors", "REST Telemetry"],
       architecture: "Analog Sensor Array → ESP32 Edge Processor (Calibration) → ThingSpeak REST API → Cloud Analytics Dashboard",
       links: {
+        demo: "https://smart-energy-monitoring-nu.vercel.app/",
         github: "https://github.com/srixram08"
       }
     },
