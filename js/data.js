@@ -156,6 +156,7 @@ const PORTFOLIO_DATA = {
       techStack: ["AI Red Teaming", "OpenTelemetry", "Digital Twins", "Python", "Dynamic DNA", "Synthetic APIs", "Adversarial Simulation", "Graph Visualizer"],
       architecture: "AI Agent → Decision Engine → Tool Call Interceptor → Digital Twin Sandbox → State Change Evaluation → Failure Graph → Dynamic Guardrail Synthesis",
       links: {
+        demo: "https://trustforge-um86.onrender.com/",
         github: "https://github.com/srixram08/TrustForge"
       }
     },
