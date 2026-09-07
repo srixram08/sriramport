@@ -156,7 +156,7 @@ const PORTFOLIO_DATA = {
       techStack: ["AI Red Teaming", "OpenTelemetry", "Digital Twins", "Python", "Dynamic DNA", "Synthetic APIs", "Adversarial Simulation", "Graph Visualizer"],
       architecture: "AI Agent → Decision Engine → Tool Call Interceptor → Digital Twin Sandbox → State Change Evaluation → Failure Graph → Dynamic Guardrail Synthesis",
       links: {
-        github: "https://github.com/srixram08"
+        github: "https://github.com/srixram08/TrustForge"
       }
     },
     {
@@ -184,7 +184,7 @@ const PORTFOLIO_DATA = {
       techStack: ["AI/ML Predictive Telemetry", "SHA-256 State Hashing", "WebSockets", "Digital Twin", "Distributed State", "Node.js", "React"],
       architecture: "Client Telemetry Stream (100Hz) → ML Failure Predictor → Edge Checkpoint Cache → SHA-256 Hash Ring → Autonomous Rollback Orchestrator",
       links: {
-        github: "https://github.com/srixram08"
+        github: "https://github.com/srixram08/Team7"
       }
     },
     {
@@ -211,6 +211,7 @@ const PORTFOLIO_DATA = {
       techStack: ["Cybersecurity", "Anomaly Detection", "Behavioral Analysis", "Python", "FastAPI", "React", "Machine Learning"],
       architecture: "Carrier Signal Stream + Device Telemetry → Feature Extractor → Ensembled Anomaly Detector → Step-up Auth Trigger",
       links: {
+        demo: "https://sentinelx-frontend-zeta.vercel.app/",
         github: "https://github.com/srixram08"
       }
     },
@@ -264,21 +265,22 @@ const PORTFOLIO_DATA = {
       techStack: ["React", "Vite", "Node.js", "Express.js", "PostgreSQL", "Prisma ORM", "JWT", "Bcrypt", "Axios", "Recharts"],
       architecture: "React Single Page App → Express REST APIs (JWT Protected) → Prisma ORM → PostgreSQL Instance",
       links: {
+        demo: "https://inventra-idey.onrender.com/",
         github: "https://github.com/srixram08"
       }
     },
     {
       id: "forcedb",
-      title: "ForgeDB",
-      subtitle: "High-Throughput Bitcask-Inspired Log-Structured Storage Engine",
-      domain: "Systems / Database Engineering",
+      title: "ForgeDB / Vector Engine",
+      subtitle: "High-Throughput Bitcask-Inspired Log-Structured Storage & Vector Engine",
+      domain: "Systems / Database & Vector Engineering",
       category: "fullstack",
       featured: true,
-      badge: "Bitcask Architecture • Custom Engine",
+      badge: "Bitcask Architecture • Vector Engine",
       heroIcon: "database",
       glowColor: "black",
       problem: "Standard relational stores incur severe write amplification and lock contention under append-heavy ingest workloads.",
-      solution: "ForgeDB is a custom-engineered key-value storage engine modeled after Riak's Bitcask architecture, delivering O(1) reads and blazingly fast sequential append-only writes.",
+      solution: "ForgeDB is a custom-engineered key-value storage and vector processing engine modeled after Riak's Bitcask architecture, delivering O(1) reads and blazingly fast sequential append-only writes.",
       innovation: "In-memory Keydir hash map indexing directly into immutable append-only data segment files with background compaction and merge routines.",
       features: [
         "⚡ O(1) Disk Read Latency via In-Memory Keydir Hash Index",
@@ -290,6 +292,7 @@ const PORTFOLIO_DATA = {
       techStack: ["C / C++", "Systems Programming", "Bitcask Architecture", "Hash Indexing", "Log-Structured Append", "REPL Engine"],
       architecture: "CLI / REPL → Query Parser → Keydir Index (Memory) → Active Data Segment Append (Disk) → Background Merge Daemon",
       links: {
+        demo: "https://vector-4cde.onrender.com/",
         github: "https://github.com/srixram08"
       }
     },
@@ -315,6 +318,7 @@ const PORTFOLIO_DATA = {
       techStack: ["JavaScript", "Data Visualization", "Chart.js", "React", "REST APIs", "Modern CSS"],
       architecture: "Raw Metrics Ingestion → Client Aggregator Pipeline → Modular Chart Widgets → Executive Presentation Layer",
       links: {
+        demo: "https://lumora-ai-navy.vercel.app/",
         github: "https://github.com/srixram08"
       }
     },
@@ -415,7 +419,7 @@ const PORTFOLIO_DATA = {
       techStack: ["React Native", "Expo", "JavaScript", "AsyncStorage", "Mobile UI Design"],
       architecture: "React Native UI Layer → Redux/Context Store → AsyncStorage Secure Device Persistence",
       links: {
-        github: "https://github.com/srixram08"
+        github: "https://github.com/srixram08/Copymate"
       }
     }
   ],
