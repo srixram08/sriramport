@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sriram S — AI/ML, IoT & Full-Stack Engineer | Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Sriram S — 2nd Year BE CSE Student at SriIT. AI/ML, IoT, Full-Stack Development, Geospatial Intelligence (TraceX - SIH 2026), and AI Agent Red Teaming.">
+  <meta name="keywords" content="Sriram S, TraceX, Smart India Hackathon, SIH 2026, NTRO, TrustForge, ReviveX, SENTINELX, Sri Ramakrishna Institute of Technology, AI ML Engineer, IoT">
+  <meta name="author" content="Sriram S">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- External Scripts: Three.js & Lucide Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- 3D Three.js Animated Canvas -->
+  <div id="three-canvas-container"></div>
+  <div class="aurora-vignette"></div>
+
+  <!-- Top Header Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <!-- Left Hexagon Brand Icon -->
+      <a href="#hero" class="nav-logo-hex" title="Sriram S">S</a>
+
+      <!-- Center Menu Links -->
+      <ul class="nav-center-menu">
+        <li><a href="#hero" class="nav-item-link active">Home</a></li>
+        <li><a href="#about" class="nav-item-link">About</a></li>
+        <li><a href="#flagship" class="nav-item-link">TraceX</a></li>
+        <li><a href="#portfolio" class="nav-item-link">Portfolio</a></li>
+        <li><a href="#skills" class="nav-item-link">Skills</a></li>
+        <li><a href="#hackathons" class="nav-item-link">Hackathons</a></li>
+        <li><a href="#terminal" class="nav-item-link">Terminal</a></li>
+        <li><a href="#contact" class="nav-item-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Social Media Circular Icons (High-Contrast SVGs) -->
+      <div class="nav-right-socials">
+        <!-- GitHub Icon -->
+        <a href="https://github.com/srixram08" target="_blank" class="social-circle-btn" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/sriram-s-3a52aa382/" target="_blank" class="social-circle-btn" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+        <!-- Audio Toggle -->
+        <button id="sfx-toggle-btn" class="social-circle-btn" title="Toggle Sound FX">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-wrapper">
+
+    <!-- Cinematic Hero Section -->
+    <section id="hero" class="hero-cinematic">
+      <div class="hero-tagline-caps">
+        <span>AI/ML</span>
+        <span class="dot"></span>
+        <span>IOT</span>
+        <span class="dot"></span>
+        <span>FULL-STACK</span>
+      </div>
+
+      <h1 class="hero-main-title">
+        Sriram S
+      </h1>
+
+      <a href="#portfolio" class="btn-pill-white">
+        View My Works <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+      </a>
+    </section>
+
+    <!-- Bio Card Overlay Section -->
+    <section id="about" class="bio-overlay-section">
+      <div class="container">
+        <div class="bio-frosted-card">
+          
+          <!-- Portrait & Status Column -->
+          <div class="bio-portrait-col">
+            <div class="bio-avatar-frame">
+              <span>S</span>
+            </div>
+            <div class="status-badge-live">
+              <span class="pulse-dot-green"></span>
+              <span>Available for Internships 2026</span>
+            </div>
+          </div>
+
+          <!-- Description & Mission Column -->
+          <div class="bio-text-col">
+            <h2>
+              Engineering resilient AI systems, IoT hardware platforms, and full-stack architectures.
+            </h2>
+            <p class="bio-description">
+              2nd Year Computer Science & Engineering student at <strong>Sri Ramakrishna Institute of Technology (SriIT)</strong>. Passionate about solving mission-critical challenges—from satellite-based maritime oil spill attribution with <em>TraceX</em> (SIH 2026 / NTRO) to enterprise AI agent red-teaming with <em>TrustForge</em>, self-healing platforms with <em>ReviveX</em>, and connected IoT telemetry.
+            </p>
+
+            <!-- Stats Row -->
+            <div class="bio-stats-row">
+              <div class="stat-item">
+                <h3>12+</h3>
+                <p>Major Projects</p>
+              </div>
+              <div class="stat-item">
+                <h3>9+</h3>
+                <p>Hackathons</p>
+              </div>
+              <div class="stat-item">
+                <h3>8+</h3>
+                <p>Certifications</p>
+              </div>
+              <div class="stat-item">
+                <h3>100Hz</h3>
+                <p>Telemetry AI</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Flagship Innovation: TraceX (SIH 2026 / NTRO) -->
+    <section id="flagship">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Flagship Space & AI Breakthrough</span>
+          <h2 class="section-title">TraceX — <span>Smart India Hackathon 2026</span></h2>
+          <p class="section-desc">
+            Problem Statement SIH26143 for National Technical Research Organisation (NTRO). AI-driven maritime satellite oil spill detection and hydrodynamic origin attribution.
+          </p>
+        </div>
+
+        <div class="spotlight-card">
+          <div class="spotlight-badge">
+            <i data-lucide="satellite"></i> SIH 2026 • NTRO Problem SIH26143 • Space Technology
+          </div>
+
+          <div class="spotlight-grid">
+            <div class="spotlight-left">
+              <h3 class="spotlight-title">TraceX</h3>
+              <div class="spotlight-sub">Maritime Intelligence & "Rewind the Ocean" Origin Attribution</div>
+              
+              <p class="spotlight-text">
+                Combines high-resolution satellite imagery, global AIS vessel tracking, and physics-based ocean current modeling to reverse-engineer oil slick drift and attribute responsibility to specific marine vessels.
+              </p>
+
+              <div class="innovation-highlight">
+                <strong>✨ Core Innovation: "Rewind the Ocean"</strong>
+                <p>Instead of just detecting the slick where it is floating now, TraceX computes backward hydrodynamic advection over time to pinpoint where the dump occurred, correlating that spatio-temporal corridor with historic AIS vessel tracks.</p>
+              </div>
+
+              <div class="spotlight-bullets">
+                <div class="spotlight-bullet"><i data-lucide="check"></i> Satellite CV Oil Spill Detection</div>
+                <div class="spotlight-bullet"><i data-lucide="check"></i> AIS Vessel Trajectory Analytics</div>
+                <div class="spotlight-bullet"><i data-lucide="check"></i> Ocean Current & Wind Modeling</div>
+                <div class="spotlight-bullet"><i data-lucide="check"></i> "Rewind the Ocean" Physics</div>
+                <div class="spotlight-bullet"><i data-lucide="check"></i> Probable Source Geolocation</div>
+                <div class="spotlight-bullet"><i data-lucide="check"></i> Multi-factor Vessel Risk Score</div>
+              </div>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <button class="btn-pill-white" style="font-size: 0.82rem; padding: 12px 28px;" onclick="openProjectModal('tracex')">
+                  <i data-lucide="cpu"></i> Deep Architecture
+                </button>
+                <button class="filter-pill" onclick="runTerminalCommand('ocean-sim')">
+                  <i data-lucide="play"></i> Run Hydrodynamic Sim
+                </button>
+              </div>
+            </div>
+
+            <!-- Architecture Flow -->
+            <div class="spotlight-arch-box">
+              <div class="arch-box-title">
+                <i data-lucide="workflow"></i> Forensic Pipeline Architecture
+              </div>
+              <div class="arch-node-list">
+                <div class="arch-node">
+                  <span class="num">1</span>
+                  <div>
+                    <strong style="color: #000; font-size: 0.9rem;">Satellite Ingestion</strong>
+                    <div style="color: var(--text-muted); font-size: 0.78rem;">SAR & Optical Sentinel Imagery</div>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="num">2</span>
+                  <div>
+                    <strong style="color: #000; font-size: 0.9rem;">CV Slick Segmentation</strong>
+                    <div style="color: var(--text-muted); font-size: 0.78rem;">Deep Learning Mask Extraction</div>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="num">3</span>
+                  <div>
+                    <strong style="color: #000; font-size: 0.9rem;">"Rewind the Ocean" Model</strong>
+                    <div style="color: var(--text-muted); font-size: 0.78rem;">Reverse Current & Wind Advection</div>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="num">4</span>
+                  <div>
+                    <strong style="color: #000; font-size: 0.9rem;">AIS Spatiotemporal Match</strong>
+                    <div style="color: var(--text-muted); font-size: 0.78rem;">Correlating Vessel Route Anomalies</div>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="num">5</span>
+                  <div>
+                    <strong style="color: #000; font-size: 0.9rem;">Vessel Risk Attribution</strong>
+                    <div style="color: var(--text-muted); font-size: 0.78rem;">Explainable Forensic Case Dossier</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 Major Projects Showcase -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Major <span>Projects</span></h2>
+          <p class="section-desc">
+            Production-grade systems ordered strategically across Space Tech, AI Red Teaming, Self-Healing Platforms, Storage Engines, and IoT.
+          </p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="projects-filter-nav">
+          <button class="filter-pill active" onclick="filterProjects('all', this)">
+            <i data-lucide="grid"></i> All Systems (12)
+          </button>
+          <button class="filter-pill" onclick="filterProjects('space-ai', this)">
+            <i data-lucide="satellite"></i> Space & AI (4)
+          </button>
+          <button class="filter-pill" onclick="filterProjects('cybersecurity', this)">
+            <i data-lucide="shield-alert"></i> Cybersecurity (2)
+          </button>
+          <button class="filter-pill" onclick="filterProjects('fullstack', this)">
+            <i data-lucide="database"></i> Full-Stack & Systems (3)
+          </button>
+          <button class="filter-pill" onclick="filterProjects('iot', this)">
+            <i data-lucide="cpu"></i> IoT & Mobile (3)
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-masonry" id="projects-grid-container">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <p class="section-desc">
+            Comprehensive toolkit across AI/ML algorithms, IoT embedded microcontrollers, and modern full-stack web architectures.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid-container">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Hackathons & Competitions Timeline -->
+    <section id="hackathons">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Competitive Engineering</span>
+          <h2 class="section-title">Hackathons & <span>Achievements</span></h2>
+          <p class="section-desc">
+            Track record of high-velocity problem solving under national hackathons and competitive sprints.
+          </p>
+        </div>
+
+        <div class="timeline-track" id="hackathons-timeline-container">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Credentials -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Accreditations</span>
+          <h2 class="section-title">Certifications & <span>Credentials</span></h2>
+          <p class="section-desc">
+            Industry verified certifications in Enterprise Design Thinking, Database Architecture, and Data Analytics.
+          </p>
+        </div>
+
+        <div class="certs-masonry" id="certs-grid-container">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal (CLI Playground) -->
+    <section id="terminal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Developer Playground</span>
+          <h2 class="section-title">Interactive <span>Cyber REPL</span></h2>
+          <p class="section-desc">
+            Direct terminal interface into Sriram's portfolio telemetry. Run interactive simulations or query specific details.
+          </p>
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <div class="terminal-dots-row">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">
+              sriram@portfolio-node: ~ (bash / zsh)
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #000; font-weight: 700;">
+              STATUS: ONLINE
+            </div>
+          </div>
+
+          <div class="terminal-console-body">
+            <div class="terminal-output" id="terminal-output"></div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="color: #000; font-weight: 700;">sriram@portfolio:~$</span>
+              <input type="text" id="terminal-input" style="flex-grow: 1; background: transparent; border: none; outline: none; font-family: var(--font-mono); font-size: 0.88rem; color: #000;" placeholder="Type 'help' or click commands below..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+          <div class="terminal-chips-dock">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Quick Commands:</span>
+            <button class="t-chip" onclick="runTerminalCommand('tracex')">tracex</button>
+            <button class="t-chip" onclick="runTerminalCommand('ocean-sim')">ocean-sim</button>
+            <button class="t-chip" onclick="runTerminalCommand('trustforge')">trustforge</button>
+            <button class="t-chip" onclick="runTerminalCommand('revivex')">revivex</button>
+            <button class="t-chip" onclick="runTerminalCommand('skills')">skills</button>
+            <button class="t-chip" onclick="runTerminalCommand('projects')">projects</button>
+            <button class="t-chip" onclick="runTerminalCommand('hire')">hire</button>
+            <button class="t-chip" onclick="runTerminalCommand('clear')">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span>Connect</span></h2>
+          <p class="section-desc">
+            Seeking Internship Opportunities in AI/ML, IoT, Geospatial Tech, and Full-Stack Development.
+          </p>
+        </div>
+
+        <div class="contact-dual-grid">
+          <div class="contact-box">
+            <h3 style="font-size: 1.6rem; color: #000000; margin-bottom: 8px; font-weight: 800;">Direct Channels</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px;">
+              Reach out for internships, project collaborations, or hackathon sprints.
+            </p>
+
+            <!-- Email Item with Instant Click-To-Copy -->
+            <div class="channel-link-item" onclick="copyToClipboard('sriram082008s@gmail.com', 'Email Address')" style="cursor: pointer;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #000000; display: flex; align-items: center; justify-content: center; color: #ffffff; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div style="flex-grow: 1;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Email (Click to copy)</div>
+                <div style="font-weight: 700; color: #000000; font-size: 0.95rem;">sriram082008s@gmail.com</div>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted);">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+              </svg>
+            </div>
+
+            <!-- GitHub Item -->
+            <a href="https://github.com/srixram08" target="_blank" class="channel-link-item">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #000000; display: flex; align-items: center; justify-content: center; color: #ffffff; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
+              <div style="flex-grow: 1;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">GitHub Profile</div>
+                <div style="font-weight: 700; color: #000000;">github.com/srixram08</div>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted);">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+
+            <!-- LinkedIn Item -->
+            <a href="https://www.linkedin.com/in/sriram-s-3a52aa382/" target="_blank" class="channel-link-item">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #000000; display: flex; align-items: center; justify-content: center; color: #ffffff; flex-shrink: 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div style="flex-grow: 1;">
+                <div style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">LinkedIn Profile</div>
+                <div style="font-weight: 700; color: #000000;">linkedin.com/in/sriram-s</div>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted);">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Direct Form -->
+          <form id="contact-form" class="contact-box" style="display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.6rem; color: #000000; margin-bottom: 4px; font-weight: 800;">Send a Message</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 18px;">
+              Dispatches directly to Sriram's inbox.
+            </p>
+
+            <div class="form-field">
+              <label for="contact-name">YOUR NAME / ORGANIZATION</label>
+              <input type="text" id="contact-name" class="form-ctrl" placeholder="e.g. Hiring Manager" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email">YOUR EMAIL</label>
+              <input type="email" id="contact-email" class="form-ctrl" placeholder="e.g. recruiter@company.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">MESSAGE</label>
+              <textarea id="contact-message" class="form-ctrl" rows="4" placeholder="Hi Sriram, we would like to discuss an internship opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-pill-white" style="margin-top: 10px; justify-content: center;">
+              Dispatch Message <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="border-top: 1px solid var(--border-light); padding: 40px 0; text-align: center; color: var(--text-muted); font-size: 0.88rem; background: #ffffff;">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <strong style="color: #000000;">SRIRAM S</strong> — BE CSE Student @ Sri Ramakrishna Institute of Technology
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-secondary);">
+          3D Minimalist Engine • SIH 2026 Edition
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Dynamic Project Modal Overlay -->
+  <div id="project-modal-overlay" class="modal-backdrop">
+    <div id="project-modal-content" class="modal-dialog">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
